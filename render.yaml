@@ -1,0 +1,10 @@
+builds:
+  - name: blog-server
+    env: node
+    buildCommand: npm install
+    startCommand: node ./src/index.js
+    copyDirs:
+      - src
+    copyFiles:
+      - package.json
+      - package-lock.json
